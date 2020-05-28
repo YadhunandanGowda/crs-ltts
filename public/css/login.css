@@ -1,0 +1,22 @@
+.login-sec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    max-width: 90%;
+    padding: 20px 40px 40px;
+    background: rgba(65, 65, 255, 0.3215686274509804);
+}
+
+.login-sec .form-control {
+    border-radius: 20px;
+}
+
+.login-sec .submit {
+    width: 100%;
+}
+
+.login-sec .ttl {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+}
