@@ -1,92 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSR</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/select2.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/select2.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
     <header>
-            <div class="logo"><img class="web-icon" src="./images/larsen-and-toubro-logo-web.png" alt=""><img
-                            class="mob-icon" src="./images/larsen-and-toubro-logo-mob.png" alt=""></div>
-            <div class="options">
-                    <a class="home-icon" href="javascript:void(0)"> <img src="./images/home-icon.png" alt=""> </a>
-                    <div class="profile-pic">
-                            <a class="outer-pp" href="javascript:void(0)"><img src="./images/landt-pp.png"
-                                            alt=""></a>
-                            <div class="logout-popup">
-                                    <div class="cls-btn"></div>
-                                    <div class="popup-content">
-                                            <h3>Name</h3>
-                                            <p class="mb-0">Email@gmail.com</p>
-                                            <img class="inner-pp" src="./images/landt-pp.png" alt="">
-                                            <button class="btn log-out-btn">Log Out</button>
-                                    </div>
-                            </div>
-                    </div>
-                    <a class="back-btn" href="javascript:void(0)"><img src="./images/back_btn.png" alt=""></a>
-                    <div class="burger">
-                        <span></span>
-                      </div>
+      <div class="logo">
+        <!-- <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-web.png"
+          alt=""
+        /> -->
+        <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-mob.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="options">
+        <a class="home-icon" href="javascript:void(0)">
+          <img src="./images/home-icon.svg" alt="" />
+        </a>
+        <div class="profile-pic">
+          <a class="outer-pp" href="javascript:void(0)"
+            ><img src="./images/landt-pp.png" alt=""
+          /></a>
+
+          <div class="logout-popup">
+            <div class="cls-btn"></div>
+            <div class="popup-content">
+              <h3>Name</h3>
+              <p class="mb-0">Email@gmail.com</p>
+              <img class="inner-pp" src="./images/landt-pp.png" alt="" />
+              <button class="btn log-out-btn">Log Out</button>
             </div>
-            <div id="preloader">
-                    <div class="preloader-container">
-                            <div class="preloader-animation"></div>
-                    </div>
-            </div>
-            <nav class="cstm-nav-bar">
-              <ul>
-                <li><a class="font-weight-bold" href="javascript:void(0)">CSR Policy</a></li>
-                <li><a class="font-weight-bold" href="javascript:void(0)">CSR Awards</a></li>
-                <li><a class="font-weight-bold" href="javascript:void(0)">CSR Achievements</a></li>
-                <li class="multi"><a class="font-weight-bold" href="javascript:void(0)">CSR</a>
-                    <ul>
-                      <li><a href="javascript:void(0)">Create new CSR initiatives</a></li>
-                      <li><a href="javascript:void(0)">View existing CSR projects</a></li>
-                      <li><a href="javascript:void(0)">Governance & Complainces</a></li>
-                    </ul>
-                </li>
-              </ul>
-            </nav>
+          </div>
+        </div>
+        <a class="back-btn" href="javascript:void(0)"
+          ><img src="./images/back_btn.svg" alt=""
+        /></a>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+      <div id="preloader">
+        <div class="preloader-container">
+          <div class="preloader-animation"></div>
+        </div>
+      </div>
+      <nav class="cstm-nav-bar">
+        <ul>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)">CSR Policy</a>
+          </li>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)">CSR Awards</a>
+          </li>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)"
+              >CSR Achievements</a
+            >
+          </li>
+          <li class="multi">
+            <a class="font-weight-bold" href="javascript:void(0)">CSR</a>
+            <ul>
+              <li>
+                <a href="javascript:void(0)">Create new CSR initiatives</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">View existing CSR projects</a>
+              </li>
+              <li><a href="javascript:void(0)">Governance & Complainces</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="max-width mn-cntr">
-        <div class="bx-shdw-brdus p-4">
-            <h2 class="font-weight-bold">Corporate Social Responsibility</h2>
-            <p class="lead"> CSR Management HomePage </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Learn more <span>&#8594;</span></a>
+    <section class="max-width mgn-fr-hdr">
+      <div class="banner-sec">
+        <div class="bnr-img-sec">
+          <div class="indiv-img-blk">
+            <div class="blk-grdnt"></div>
+            <img src="./images/banner-01.jpg" alt="" />
+          </div>
+          <div class="indiv-img-blk">
+            <div class="blk-grdnt"></div>
+            <img src="./images/banner-02.jpg" alt="" />
+          </div>
+          <div class="indiv-img-blk">
+            <div class="blk-grdnt"></div>
+            <img src="./images/banner-03.jpg" alt="" />
+          </div>
         </div>
-        
-        <div class="row">
-            <div class="p-3 my-3 bx-shdw-brdus sub-tbs">
-                <h4 class="font-weight-bold">Details of CSR Management</h4>
-                <p>
-                    Corporate Social Responsibility is a management concept whereby companies integrate social and environmental concerns in their business operations and interactions with their stakeholders.
-                </p>
-                <p><a class="btn btn-primary" href="javascript:void(0)">Learn more <span>&#8594;</span></a></p>
-            </div>
-            <div class="p-3 m-3 bx-shdw-brdus sub-tbs">
-                <h4 class="font-weight-bold">Get more LTTS CSR</h4>
-                <p>L&T Technology Services is offering vocational training and skill development courses, as part of the Skill India Mission, to empower the disenfranchised in the country. We teamed up with Sankara Nethralaya and IIT Madras to perform free cataract surgeries in rural villages.</p>
-                <p><a class="btn btn-primary" href="javascript:void(0)">Learn more <span>&#8594;</span></a></p>
-            </div>
-            <div class="p-3 my-3 bx-shdw-brdus sub-tbs">
-                <h4 class="font-weight-bold">Web Hosting</h4>
-                <p>You can easily find a web hosting company that offers the right mix of features and price for CSR Management applications.</p>
-                <p><a class="btn btn-primary" href="javascript:void(0)">Learn more <span>&#8594;</span></a></p>
-            </div>
+        <div class="bnr-cnt-sec">
+          <div class="indiv-cnt-blk">
+            <h3 class="font-weight-bold cnt-ttl">Details of CSR Management</h3>
+            <p class="cnt-dspn">
+              Corporate Social Responsibility is a management concept whereby
+              companies integrate social and environmental concerns in their
+              business operations and interactions with their stakeholders.
+            </p>
+            <a class="cnt-link" href="javascript:void(0)"
+              ><img src="./images/read-more.svg" alt="" srcset="" />
+            </a>
+          </div>
+          <div class="indiv-cnt-blk">
+            <h3 class="font-weight-bold cnt-ttl">Get more LTTS CSR</h3>
+            <p class="cnt-dspn">
+              L&T Technology Services is offering vocational training and skill
+              development courses, as part of the Skill India Mission, to
+              empower the disenfranchised in the country. We teamed up with
+              Sankara Nethralaya and IIT Madras to perform free cataract
+              surgeries in rural villages.
+            </p>
+            <a class="cnt-link" href="javascript:void(0)"
+              ><img src="./images/read-more.svg" alt="" srcset="" />
+            </a>
+          </div>
+          <div class="indiv-cnt-blk">
+            <h3 class="font-weight-bold cnt-ttl">Web Hosting</h3>
+            <p class="cnt-dspn">
+              You can easily find a web hosting company that offers the right
+              mix of features and price for CSR Management applications.
+            </p>
+            <a class="cnt-link" href="javascript:void(0)"
+              ><img src="./images/read-more.svg" alt="" srcset="" />
+            </a>
+          </div>
         </div>
+        <div class="hdr-cnt">
+          <h1 class="font-weight-bold cnt-ttl">
+            Corporate Social Responsibility
+            <a href="javascript:void(0)" class="cnt-link"
+              ><img src="./images/read-more.svg" alt="" srcset=""
+            /></a>
+          </h1>
+          <p class="cnt-dspn">CSR Management HomePage</p>
+        </div>
+      </div>
     </section>
-    <footer class="text-center">
-        <p>&copy; 2020 - LTTS CSR </p>
-    </footer>
+    <!-- <footer class="text-center">
+      <p>&copy; 2020 - LTTS CSR</p>
+    </footer> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/select2.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
