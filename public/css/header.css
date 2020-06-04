@@ -50,6 +50,7 @@ header .options .home-icon img {
 header .options .back-btn {
   margin: 0px 20px 0px 0px;
   display: inline-block;
+  padding: 10px 0px;
 }
 
 header .options .back-btn img {
@@ -68,7 +69,7 @@ header .options .profile-pic {
 header .options .profile-pic.active {
   /* background: #8b44a5; */
   /* background: #274bd2; */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header .options .profile-pic .outer-pp img {
@@ -305,7 +306,7 @@ header .options .profile-pic .logout-popup .cls-btn::after {
   /* background-image: linear-gradient(0deg, #572cc1, #a25099); */
   /* background-image: linear-gradient(0deg, #001d88, #3f5fd6); */
   background-color: white;
-  box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.2); */
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -329,7 +330,10 @@ header .options .profile-pic .logout-popup .cls-btn::after {
 }
 
 .cstm-nav-bar ul li a:hover {
-  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  /* -webkit-box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2); */
+  background-color: rgba(128, 128, 128, 0.12);
 }
 
 .cstm-nav-bar ul li ul li a {

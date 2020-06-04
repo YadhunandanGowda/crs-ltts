@@ -1,36 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSR</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/select2.min.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body>
-    <section>
-        <div class="login-sec bx-shdw-brdus">
-            <form>
-                <h3 class="text-center font-weight-bold mb-2 pb-2 ttl">CSR</h3>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">PS Number</label>
-                  <input type="number" class="form-control" placeholder="Enter PS Number">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary submit">Submit</button>
-              </form>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/select2.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-web.png"
+          alt=""
+        /> -->
+        <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-mob.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="options">
+        <a class="home-icon" href="javascript:void(0)">
+          <img src="./images/home-icon.svg" alt="" />
+        </a>
+        <!-- <div class="profile-pic">
+          <a class="outer-pp" href="javascript:void(0)"
+            ><img src="./images/landt-pp.png" alt=""
+          /></a>
+
+          <div class="logout-popup">
+            <div class="cls-btn"></div>
+            <div class="popup-content">
+              <h3>Name</h3>
+              <p class="mb-0">Email@gmail.com</p>
+              <img class="inner-pp" src="./images/landt-pp.png" alt="" />
+              <button class="btn log-out-btn">Log Out</button>
+            </div>
+          </div>
+        </div> -->
+        <a class="back-btn" href="javascript:void(0)"
+          ><img src="./images/back_btn.svg" alt=""
+        /></a>
+        <!-- <div class="burger">
+          <span></span>
+        </div> -->
+      </div>
+      <div id="preloader">
+        <div class="preloader-container">
+          <div class="preloader-animation"></div>
         </div>
+      </div>
+    </header>
+    <section class="max-width mgn-fr-hdr">
+      <div class="banner-sec">
+        <div class="bnr-img-sec">
+          <div class="indiv-img-blk">
+            <div class="blk-grdnt"></div>
+            <img src="./images/login-page-banner.jpg" alt="" />
+          </div>
+        </div>
+        <div class="bnr-cnt-sec">
+          <div class="indiv-cnt-blk">
+            <form class="login-form-csr">
+              <h3 class="text-center font-weight-bold ttl">CSR</h3>
+              <div class="form-group">
+                <label for="exampleInputEmail1">PS Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Enter PS Number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+              <!-- <button type="submit" class="btn btn-primary submit">
+                Submit
+              </button> -->
+              <a class="cnt-link" href="javascript:void(0)"
+                ><img src="./images/read-more.svg" alt="" srcset="" />
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- <section>
+      <div class="login-sec bx-shdw-brdus">
+        <form>
+          <h3 class="text-center font-weight-bold mb-2 pb-2 ttl">CSR</h3>
+          <div class="form-group">
+            <label for="exampleInputEmail1">PS Number</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Enter PS Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+      </div>
+    </section> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/select2.min.js"></script>
-    <script src="./js/script.js"></script>
-</body>
+    ,
+    <script>
+      document.onreadystatechange = function () {
+        var state = document.readyState;
+        if (state == "interactive") {
+          //  document.getElementById('contents').style.visibility="hidden";
+        } else if (state == "complete") {
+          setTimeout(function () {
+            document.getElementById("preloader").style.display = "none";
+          }, 1000);
+        }
+      };
+    </script>
+  </body>
 </html>
