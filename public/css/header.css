@@ -58,6 +58,23 @@ header .options .back-btn img {
   height: 40px;
 }
 
+header .options button.login {
+  margin: 16px 10px 16px 15px;
+  background-color: unset;
+  color: black;
+  border: 2px solid black;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .options button.login:hover,
+header .options button.login:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+  box-shadow: unset;
+}
+
 header .options .profile-pic {
   padding: 10px;
   margin: 0px 5px 0px 10px;
