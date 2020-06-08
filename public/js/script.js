@@ -66,6 +66,18 @@ $(document).ready(function () {
   });
 
   // draft page JS ends
+
+  //project creation page JS starts
+
+  $(".project-creation-section").mCustomScrollbar({
+    scrollButtons: { enable: true },
+  });
+
+  $(".input-type-file").on("change", function (event) {
+    $(this).siblings(".label-file-name").text(event.target.files[0].name);
+  });
+
+  //project creation page JS ends
 });
 
 document.onreadystatechange = function () {

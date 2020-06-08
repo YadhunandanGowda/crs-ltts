@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSR</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/select2.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/mcustom.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-web.png"
+          alt=""
+        /> -->
+        <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-mob.svg"
+          alt=""
+        />
+      </div>
+      <div class="options">
+        <a class="home-icon" href="javascript:void(0)">
+          <img src="./images/home-icon.svg" alt="" />
+        </a>
+        <!-- <button class="btn login">Login</button> -->
+        <div class="profile-pic">
+          <a class="outer-pp" href="javascript:void(0)"
+            ><img src="./images/landt-pp.png" alt=""
+          /></a>
+
+          <div class="logout-popup">
+            <div class="cls-btn"></div>
+            <div class="popup-content">
+              <h3>Name</h3>
+              <p class="mb-0">Email@gmail.com</p>
+              <img class="inner-pp" src="./images/landt-pp.png" alt="" />
+              <button class="btn log-out-btn">Log Out</button>
+            </div>
+          </div>
+        </div>
+        <a class="back-btn" href="javascript:void(0)"
+          ><img src="./images/back_btn.svg" alt=""
+        /></a>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+      <div id="preloader">
+        <div class="preloader-container">
+          <div class="preloader-animation"></div>
+        </div>
+      </div>
+      <nav class="cstm-nav-bar">
+        <ul>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)">CSR Policy</a>
+          </li>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)">CSR Awards</a>
+          </li>
+          <li>
+            <a class="font-weight-bold" href="javascript:void(0)"
+              >CSR Achievements</a
+            >
+          </li>
+          <li class="multi">
+            <a class="font-weight-bold" href="javascript:void(0)">CSR</a>
+            <ul>
+              <li>
+                <a href="javascript:void(0)">Create new CSR initiatives</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">View existing CSR projects</a>
+              </li>
+              <li><a href="javascript:void(0)">Governance & Complainces</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="max-width mgn-fr-hdr mx-4">
+      <div class="project-creation-section">
+        <h1 class="mb-4 csr-title">Project Creation</h1>
+        <form>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="PatName"
+                >CSR Patner Name<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="PatName"
+                placeholder="First name"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="VendCode"
+                >Vender Code<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="VendCode"
+                placeholder="Last name"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ProjName"
+                >Project Name<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="ProjName"
+                placeholder="Last name"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="Theme"
+                >Theme<span class="csr-input-Required">*</span></label
+              >
+              <select class="form-control" id="Theme">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+              <div class="hidden-feilds">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Themefield"
+                  placeholder="Theme"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="OrgType"
+                >Organization Type / legal status<span
+                  class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <select class="form-control" id="OrgType">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+              <div class="hidden-feilds">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="OrgnType"
+                  placeholder="Organization Type / legal status"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="RegDoc"
+                >Upload Registration document<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <select id="RegDoc" class="form-control">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+              <div class="hidden-feilds text-center">
+                <input
+                  class="input-type-file"
+                  type="file"
+                  name="RegDoc"
+                  id="RegDocFile"
+                />
+                <label class="label-type-file" for="RegDocFile">
+                  Click To Upload Document
+                </label>
+                <label class="label-file-name"></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="Theme"
+                >80G Certified<span class="csr-input-Required">*</span></label
+              >
+              <select id="GCert" class="form-control">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+              <div class="hidden-feilds text-center">
+                <input
+                  class="input-type-file"
+                  type="file"
+                  name="GCert"
+                  id="GCertFile"
+                />
+                <label class="label-type-file" for="GCertFile">
+                  Click To Upload Document
+                </label>
+                <label class="label-file-name"></label>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ACert"
+                >12 A Certified<span class="csr-input-Required">*</span></label
+              >
+              <select id="ACert" class="form-control HideDataDisp">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+              <div class="hidden-feilds text-center">
+                <input
+                  class="input-type-file"
+                  type="file"
+                  name="ACert"
+                  id="ACertFile"
+                />
+                <label class="label-type-file" for="ACertFile">
+                  Click To Upload Document
+                </label>
+                <label class="label-file-name"></label>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="TdsExe"
+                >Is partner TDS Exempted<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <select id="TdsExe" class="form-control">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+              <div class="hidden-feilds text-center">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="TdsRel"
+                  placeholder="Enter the relavent details"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ProjRece"
+                >Has the Proposal for the final Projects received and
+                accepted<span class="csr-input-Required">*</span></label
+              >
+              <select id="ProjRece" class="form-control">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+              <div class="hidden-feilds text-center">
+                <input
+                  class="input-type-file"
+                  type="file"
+                  name="ProjRece"
+                  id="ProjRelDoc"
+                />
+                <label class="label-type-file" for="ProjRelDoc">
+                  Click To Upload Document
+                </label>
+                <label class="label-file-name"></label>
+              </div>
+              <div class="hidden-feilds text-center">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="ProjRel"
+                  placeholder="Enter the relavent details"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ContDate"
+                >Effective Date of agreement<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="ContDate"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ExpDate"
+                >Expire Date of agreement<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="ExpDate"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="SOW_Start">SOW start date</label>
+              <input
+                type="text"
+                class="form-control"
+                id="SOW_Start"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="SOW_End"
+                >SOW end date<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="SOW_End"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ConRefNo">Agreement Reference No if any</label>
+              <input
+                type="text"
+                class="form-control"
+                id="ConRefNo"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="LegConPer"
+                >Name and desgination Authorisied legal contact person
+                details<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="LegConPer"
+                placeholder=""
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="LegContNo"
+                >Authorized Contact number<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="LegContNo"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="SpoEmail"
+                >Authorized Email ID<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="SpoEmail"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <h3 class="csr-title my-3">SPOC from Vendor for this project:</h3>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="VendName"
+                >Name<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="VendName"
+                placeholder=""
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="VendContNo"
+                >Contact number<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="VendContNo"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="VendEmail"
+                >Email ID<span class="csr-input-Required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="VendEmail"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="VendAltNo">Alternate number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="VendAltNo"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="Location">Location:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Location"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="Projstart"
+                >Project Start Month & Year<span class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Projstart"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Please provide a valid value.
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="Projend">Project End Month & Year</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Projend"
+                placeholder="Click to select date"
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="ProjCost">Total Project cost in INR</label>
+              <input
+                type="text"
+                class="form-control"
+                id="ProjCost"
+                placeholder=""
+                value=""
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3 csr-col-box">
+              <label for="inputState"
+                >Is the Project spread over to multiple Financial Year<span
+                  class="csr-input-Required"
+                  >*</span
+                ></label
+              >
+              <select id="inputState" class="form-control">
+                <option>Yes</option>
+                <option selected>No</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- <footer class="text-center">
+      <p>&copy; 2020 - LTTS CSR</p>
+    </footer> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/mcustom.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

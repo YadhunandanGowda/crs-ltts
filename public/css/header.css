@@ -7,7 +7,7 @@ header {
   padding: 0px 30px;
   width: 100%;
   /* background: #a25099; */
-  /* background: rgb(63, 95, 214); */
+  background: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.30196078431372547);
   z-index: 99;
 }

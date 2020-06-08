@@ -55,7 +55,6 @@ header .options .back-btn {
 .login-form-csr .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(255, 255, 255, 0.3);
-  opacity: 1; /* Firefox */
 }
 
 .login-form-csr .form-control:-ms-input-placeholder {
