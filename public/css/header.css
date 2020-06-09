@@ -312,13 +312,34 @@ header .options .profile-pic .logout-popup .cls-btn::after {
   width: 100%;
 }
 
-.cstm-nav-bar {
+nav.csr-nav {
+  margin-top: 65px;
   position: fixed;
   top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+nav.csr-nav.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.csr-nav-menu {
+  position: absolute;
+  top: 0px;
   right: -300px;
-  margin-top: 65px;
   padding: 30px;
-  height: calc(100% - 65px);
+  height: 100%;
+  overflow: auto;
   min-width: 300px;
   /* background-image: linear-gradient(0deg, #572cc1, #a25099); */
   /* background-image: linear-gradient(0deg, #001d88, #3f5fd6); */
@@ -330,15 +351,15 @@ header .options .profile-pic .logout-popup .cls-btn::after {
   transition: all 0.5s ease-out;
 }
 
-.cstm-nav-bar.show {
+.csr-nav-menu.show {
   right: 0px;
 }
 
-.cstm-nav-bar ul {
+.csr-nav-menu ul {
   list-style: none;
 }
 
-.cstm-nav-bar ul li a {
+.csr-nav-menu ul li a {
   text-decoration: none;
   color: black;
   padding: 10px 20px;
@@ -346,31 +367,31 @@ header .options .profile-pic .logout-popup .cls-btn::after {
   border-bottom: 1px solid rgba(0, 0, 0, 0.39);
 }
 
-.cstm-nav-bar ul li a:hover {
+.csr-nav-menu ul li a:hover {
   /* -webkit-box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px -10px 6px -6px rgba(0, 0, 0, 0.2); */
   background-color: rgba(128, 128, 128, 0.12);
 }
 
-.cstm-nav-bar ul li ul li a {
+.csr-nav-menu ul li ul li a {
   padding-left: 40px;
   font-size: 14px;
 }
 
-.cstm-nav-bar .multi > a {
+.csr-nav-menu .multi > a {
   position: relative;
 }
 
-.cstm-nav-bar .multi ul {
+.csr-nav-menu .multi ul {
   display: none;
 }
 
-.cstm-nav-bar .multi ul.show {
+.csr-nav-menu .multi ul.show {
   display: block;
 }
 
-.cstm-nav-bar .multi > a::after {
+.csr-nav-menu .multi > a::after {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -383,7 +404,7 @@ header .options .profile-pic .logout-popup .cls-btn::after {
   transition: all 0.3s ease-out;
 }
 
-.cstm-nav-bar .multi.clicked > a::after {
+.csr-nav-menu .multi.clicked > a::after {
   transform: rotate(180deg);
 }
 

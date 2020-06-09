@@ -21,6 +21,7 @@ $(document).ready(function () {
 
   $(document).mouseup(function (e) {
     var header = $("header .options .profile-pic .logout-popup");
+    var nav = $(".csr-nav  .csr-nav-menu");
     if (
       !$("header .options .profile-pic img").is(e.target) &&
       !$("header .options .profile-pic").is(e.target) &&
@@ -30,13 +31,18 @@ $(document).ready(function () {
       header.parents(".profile-pic").removeClass("active");
       header.fadeOut();
     }
+
+    if ($(".csr-nav").is(e.target) && !nav.is(e.target)) {
+      $(".csr-nav , .csr-nav .csr-nav-menu").removeClass("show");
+      $(".burger").removeClass("clicked");
+    }
   });
   $(".burger").click(function () {
     $(".burger").toggleClass("clicked");
-    $("nav.cstm-nav-bar").toggleClass("show");
+    $(".csr-nav , .csr-nav .csr-nav-menu").toggleClass("show");
   });
 
-  $(".cstm-nav-bar .multi > a").click(function () {
+  $(".csr-nav .csr-nav-menu .multi > a").click(function () {
     $(this).parents(".multi").toggleClass("clicked");
     $(this).parents(".multi").children("ul").toggleClass("show");
   });

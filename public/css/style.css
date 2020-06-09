@@ -206,7 +206,6 @@ p {
 }
 
 .project-creation-section {
-  width: 100%;
   height: calc(100vh - 65px);
   overflow: hidden;
   background-image: url(../images/project-background.png);
@@ -223,6 +222,7 @@ p {
 
 .form-row {
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 .form-row label {
@@ -311,4 +311,44 @@ label .csr-input-Required {
   text-align: center;
   position: relative;
   top: -5px;
+}
+
+table.two-clm-tbl {
+  width: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.4);
+  margin: 0px 20px;
+}
+
+table tr th,
+table tr td {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+table tr th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.csr-cstm-btn {
+  color: white;
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+button.csr-cstm-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
