@@ -313,14 +313,14 @@ label .csr-input-Required {
   top: -5px;
 }
 
-table.two-clm-tbl {
+table.csr-table.two-clm-tbl {
   width: auto;
   white-space: nowrap;
   max-width: 100%;
   margin: 0px auto;
 }
 
-table {
+table.csr-table {
   display: block;
   overflow-x: auto;
   border-collapse: collapse;
@@ -329,15 +329,15 @@ table {
   margin: 0px 20px;
 }
 
-table tr th,
-table tr td {
+table.csr-table tr th,
+table.csr-table tr td {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   text-align: center;
 }
 
-table tr th {
+table.csr-table tr th {
   background-color: rgba(255, 255, 255, 0.2);
 }
 

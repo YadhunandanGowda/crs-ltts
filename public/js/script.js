@@ -83,6 +83,14 @@ $(document).ready(function () {
     $(this).siblings(".label-file-name").text(event.target.files[0].name);
   });
 
+  $("#SOW_End , #PatName").datepicker({
+    container: "#mCSB_1_container",
+  });
+
+  $("#SOW_End , #PatName").on("changeDate", function (ev) {
+    $(this).datepicker("hide");
+  });
+
   //project creation page JS ends
 });
 
