@@ -104,3 +104,11 @@ document.onreadystatechange = function () {
     }, 1000);
   }
 };
+
+$(".cnt-link img").on("click", function () {
+  var link = document.createElement('a');
+  link.href = './images/sample.pdf';
+  link.download = './images/sample.pdf';
+  window.open(link.download, '_blank');
+  link.dispatchEvent(new MouseEvent('click'));
+})
