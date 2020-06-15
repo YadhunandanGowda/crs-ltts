@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/mcustom.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-table.min.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -86,57 +87,49 @@
     </header>
     <section class="max-width mgn-fr-hdr">
         <div class="project-creation-section mx-4">
-            <h1 class="mb-4 csr-title">Project Creation</h1>
+            <h1 class="mb-4 csr-title">Project Update</h1>
             <form>
                 <div class="form-row">
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="PatName">Project ID</label>
-                        <input type="text" class="form-control" id="projectID" placeholder="Project ID" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="projectID" placeholder="Project ID" value="" required readonly="readonly" />
                     </div>
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="VendCode">Project name</label>
-                        <input type="text" class="form-control" id="ProjectName" placeholder="Project name" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="ProjectName" placeholder="Project name" value="" required readonly="readonly" />
                     </div>
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="ProjName">Start date</label>
-                        <input type="text" class="form-control" id="CSR_Startdate" placeholder="Start date" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="CSR_Startdate" placeholder="Start date" value="" required readonly="readonly" />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="VendCode">End date</label>
-                        <input type="text" class="form-control" id="CSR_Enddate" placeholder="End date" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="CSR_Enddate" placeholder="End date" value="" required readonly="readonly" />
                     </div>
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="PatName">Actual start date</label>
-                        <input type="text" class="form-control" id="ActstartDate" placeholder="Actual start date"
-                            value="" required readonly="readonly" />
+                        <input type="text" class="form-control" id="ActstartDate" placeholder="Actual start date" value="" required readonly="readonly" />
                     </div>
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="ProjName">Actual end date</label>
-                        <input type="text" class="form-control" id="ActendDate" placeholder="Actual end date" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="ActendDate" placeholder="Actual end date" value="" required readonly="readonly" />
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="VendCode">Vendor Name</label>
-                        <input type="text" class="form-control" id="CSR_Enddate" placeholder="Vendor Name" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="CSR_Enddate" placeholder="Vendor Name" value="" required readonly="readonly" />
                     </div>
                     <div class="col-md-4 mb-3 csr-col-box">
                         <label for="PatName">Total cost</label>
-                        <input type="text" class="form-control" id="ActstartDate" placeholder="Total cost" value=""
-                            required readonly="readonly" />
+                        <input type="text" class="form-control" id="ActstartDate" placeholder="Total cost" value="" required readonly="readonly" />
                     </div>
                 </div>
             </form>
             <div class="form-row justify-content-center">
-                <table class="my-4 csr-table" id="FinCost">
+                <table class="my-4 csr-table">
                     <thead>
                         <tr>
                             <th>Year</th>
@@ -179,11 +172,11 @@
                     </tbody>
                 </table>
             </div>
-            <div class="form-row">
+            <!-- <div class="form-row">
                 <h3 class="csr-title my-3">Milestone & Payment Schedule</h3>
-            </div>
+            </div> -->
             <div class="form-row">
-                <table class="my-4 csr-table" id="FinCost">
+                <table class="my-4 csr-table pb-3" id="FinCost">>
                     <thead>
                         <tr>
                             <th>Milestone No</th>
@@ -229,43 +222,10 @@
                                 <input type="text" class="form-control" placeholder="Status" />
                             </td>
                             <td>
-                                <button class="btn csr-cstm-btn">Show Reports</button>
+                                <button class="btn csr-cstm-btn table-btn">Show Reports</button>
                             </td>
                             <td>
-                                <button class="btn csr-cstm-btn">Milestone Update</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <input type="text" class="form-control" placeholder="Actual Start Date" />
-                            </td>
-                            <td>
-                                <input type="text" class="form-control" placeholder="Actual End Date" />
-                            </td>
-                            <td>
-                                <input type="text" class="form-control" placeholder="Status" />
-                            </td>
-                            <td>
-                                <button class="btn csr-cstm-btn">Show Reports</button>
-                            </td>
-                            <td>
-                                <button class="btn csr-cstm-btn">Milestone Update</button>
+                                <button class="btn csr-cstm-btn table-btn">Milestone Update</button>
                             </td>
                         </tr>
                         <tr>
@@ -295,20 +255,54 @@
                                 <input type="text" class="form-control" placeholder="Status" />
                             </td>
                             <td>
-                                <button class="btn csr-cstm-btn">Show Reports</button>
+                                <button class="btn csr-cstm-btn table-btn">Show Reports</button>
                             </td>
                             <td>
-                                <button class="btn csr-cstm-btn">Milestone Update</button>
+                                <button class="btn csr-cstm-btn table-btn">Milestone Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Actual Start Date" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Actual End Date" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Status" />
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn">Show Reports</button>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn">Milestone Update</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="form-row justify-content-center">
-                <button class="btn csr-cstm-btn save m-4" id="SaveEmpData" onclick="SaveData();return false">
-                    Create CSR Project
+                <button class="btn csr-cstm-btn save m-4 blue-bgnd" id="SaveEmpData" onclick="SaveData();return false">
+                    save
                 </button>
-                <button class="btn csr-cstm-btn cancel m-4" onclick="cancelData();return false">
+                <button type="button" id="btnAdd" class="btn csr-cstm-btn m-4">Add new Milestone</button>
+                <button class="btn csr-cstm-btn cancel m-4 red-bgnd" onclick="cancelData();return false">
                     Cancel
                 </button>
             </div>
@@ -318,11 +312,13 @@
       <p>&copy; 2020 - LTTS CSR</p>
     </footer> -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/select2.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/mcustom.min.js"></script>
     <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script src="./js/bootstrap-table.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
