@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSR</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/select2.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/mcustom.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img
+          class="web-icon"
+          src="./images/larsen-and-toubro-logo-web.png"
+          alt=""
+        /> -->
+            <img class="web-icon" src="./images/larsen-and-toubro-logo-mob.svg" alt="" />
+        </div>
+        <div class="options">
+            <a class="home-icon" href="javascript:void(0)">
+                <img src="./images/home-icon.svg" alt="" />
+            </a>
+            <!-- <button class="btn login">Login</button> -->
+            <div class="profile-pic">
+                <a class="outer-pp" href="javascript:void(0)"><img src="./images/landt-pp.png" alt="" /></a>
+
+                <div class="logout-popup">
+                    <div class="cls-btn"></div>
+                    <div class="popup-content">
+                        <h3>Name</h3>
+                        <p class="mb-0">Email@gmail.com</p>
+                        <img class="inner-pp" src="./images/landt-pp.png" alt="" />
+                        <button class="btn log-out-btn">Log Out</button>
+                    </div>
+                </div>
+            </div>
+            <a class="back-btn" href="javascript:void(0)"><img src="./images/back_btn.svg" alt="" /></a>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+        <div id="preloader">
+            <div class="preloader-container">
+                <div class="preloader-animation"></div>
+            </div>
+        </div>
+        <nav class="csr-nav">
+            <div class="nav-gry-bgnd"></div>
+            <div class="csr-nav-menu">
+                <ul>
+                    <li>
+                        <a class="font-weight-bold" href="javascript:void(0)">CSR Policy</a>
+                    </li>
+                    <li>
+                        <a class="font-weight-bold" href="javascript:void(0)">CSR Awards</a>
+                    </li>
+                    <li>
+                        <a class="font-weight-bold" href="javascript:void(0)">CSR Achievements</a>
+                    </li>
+                    <li class="multi">
+                        <a class="font-weight-bold" href="javascript:void(0)">CSR</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Create new CSR initiatives</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">View existing CSR projects</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Governance & Complainces</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="max-width mgn-fr-hdr">
+        <div class="csr-main-section milestonePageBgnd">
+            <h1 class="mb-4 csr-title">Milestone Update</h1>
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="txtMilID">Milestone ID</label>
+                        <input type="text" class="form-control" id="txtMilID" placeholder="Milestone ID" value="" required readonly="readonly" />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="">Milestone Description</label>
+                        <input type="text" class="form-control" placeholder="Milestone Description" value="" required readonly="readonly" />
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="">Planned Start date</label>
+                        <input type="text" class="form-control" placeholder="Planned Start date" value="" required readonly="readonly" />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="">Planned End date</label>
+                        <input type="text" class="form-control" placeholder="Planned End date" value="" required readonly="readonly" />
+                    </div>
+                </div>
+            </form>
+            <div class="form-row">
+                <table class="my-4 csr-table pb-3" id="milestoneUpdateTable">
+                    <thead>
+                        <tr>
+                            <th>Date of Report</th>
+                            <th>Status Update Summary</th>
+                            <th>View Uploaded Report</th>
+                            <th>View Uploaded Photos</th>
+                            <th>Report Upload</th>
+                            <th>Photographs Upload</th>
+                            <th>CSR Execute Report</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody class="MultiFinYear">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Date of Report" />
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="status update summary"></textarea>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn mb-2 view-slider">View</button>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneReportUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneReportUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowonePhotoUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowonePhotoUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneExecutiveReport" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneExecutiveReport">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="Remarks"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Date of Report" />
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="status update summary"></textarea>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn mb-2 view-slider">View</button>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneReportUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneReportUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowonePhotoUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowonePhotoUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneExecutiveReport" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneExecutiveReport">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="Remarks"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Date of Report" />
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="status update summary"></textarea>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <button class="btn csr-cstm-btn table-btn mb-2 view-slider">View</button>
+                                <button class="btn csr-cstm-btn table-btn">Download</button>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneReportUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneReportUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowonePhotoUpload" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowonePhotoUpload">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <input class="input-type-file" type="file" name="RegDoc" id="rowoneExecutiveReport" />
+                                    <button class="btn csr-cstm-btn table-btn"><label class="label-type-file csr-tbl-lbl" for="rowoneExecutiveReport">
+                                        Upload
+                                    </label></button>
+                                    <!-- <label class="label-file-name"></label> -->
+                                </div>
+                            </td>
+                            <td>
+                                <textarea rows="2" cols="50" class="form-control" placeholder="Remarks"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-row justify-content-center">
+                <button class="btn csr-cstm-btn save m-4 blue-bgnd" id="SaveEmpData" onclick="SaveData();return false">
+                    save
+                </button>
+                <button type="button" id="btnAdd" class="btn csr-cstm-btn m-4">Add new Milestone</button>
+                <button class="btn csr-cstm-btn cancel m-4 red-bgnd" onclick="cancelData();return false">
+                    Cancel
+                </button>
+            </div>
+        </div>
+        <div class="csr-slider-section">
+            <div class="close-slider"></div>
+            <div class="slider-container">
+                <div class="slider-chld">
+                    <img src="./images/children.jpg" alt="image">
+                </div>
+                <div class="slider-chld">
+                    <img src="./images/children.jpg" alt="image">
+                </div>
+                <div class="slider-chld">
+                    <img src="./images/children.jpg" alt="image">
+                </div>
+                <div class="slider-chld">
+                    <img src="./images/children.jpg" alt="image">
+                </div>
+                <div class="slider-chld">
+                    <img src="./images/children.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="text-center">
+      <p>&copy; 2020 - LTTS CSR</p>
+    </footer> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/mcustom.min.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script src="./js/bootstrap-table.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -72,7 +72,7 @@ $(document).ready(function() {
 
     //project creation page JS starts
 
-    $(".project-creation-section").mCustomScrollbar({
+    $(".csr-main-section").mCustomScrollbar({
         scrollButtons: { enable: true },
     });
 
@@ -80,7 +80,28 @@ $(document).ready(function() {
     //     axis: 'x',
     // });
 
-    $(".input-type-file").on("change", function(event) {
+
+    $(".csr-slider-section .slider-container").slick({
+        dots: true,
+        prevArrow: "<div class='arrow-lft'><img class='slick-prev' src='./images/arrow-left.svg'></div>",
+        nextArrow: "<div class='arrow-rgt'><img class='slick-next' src='./images/arrow-right.svg'></div>",
+        draggable: false,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+
+
+    $(document).on("click", ".view-slider", function() {
+        $(".csr-slider-section").addClass('show');
+    })
+
+
+    $(document).on("click", ".csr-slider-section .close-slider", function() {
+        $(".csr-slider-section").removeClass('show');
+    })
+
+    $(document).on("change", ".input-type-file", function(event) {
+        console.log(event.target.files[0].name);
         $(this).siblings(".label-file-name").text(event.target.files[0].name);
     });
 
@@ -92,7 +113,7 @@ $(document).ready(function() {
         $(this).datepicker("hide");
     });
 
-    $("#FinCost").bootstrapTable({
+    $("#FinCost , #milestoneUpdateTable").bootstrapTable({
         pagination: true,
         sortable: true,
         pageSize: 10,

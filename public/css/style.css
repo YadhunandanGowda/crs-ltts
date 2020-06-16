@@ -51,7 +51,7 @@ body {
 }
 
 .mgn-fr-hdr {
-    margin-top: 65px;
+    margin-top: 62px;
 }
 
 
@@ -178,12 +178,33 @@ p {
     cursor: pointer;
 }
 
+.csr-slider-section .arrow-lft,
+.csr-slider-section .arrow-rgt {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    cursor: pointer;
+    z-index: 5;
+}
+
 .banner-sec .bnr-cnt-sec .arrow-lft img,
 .banner-sec .bnr-cnt-sec .arrow-rgt img {
     width: 100%;
 }
 
+.csr-slider-section .arrow-lft img,
+.csr-slider-section .arrow-rgt img {
+    width: 100%;
+}
+
 .banner-sec .bnr-cnt-sec .arrow-rgt {
+    right: 30px;
+}
+
+.csr-slider-section .arrow-rgt {
+    left: unset;
     right: 30px;
 }
 
@@ -194,7 +215,20 @@ p {
     list-style: none;
 }
 
+.csr-slider-section ul.slick-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
 .banner-sec .bnr-cnt-sec ul.slick-dots li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.csr-slider-section ul.slick-dots li {
     display: inline-block;
     margin: 0px 5px;
 }
@@ -209,12 +243,27 @@ p {
     transition: all 0.3s ease-out;
 }
 
+.csr-slider-section ul.slick-dots li button {
+    font-size: 0px;
+    border: none;
+    width: 15px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
 .banner-sec .bnr-cnt-sec ul.slick-dots li.slick-active button {
     background: rgba(255, 255, 255, 1);
     width: 20px;
 }
 
-.project-creation-section {
+.csr-slider-section ul.slick-dots li.slick-active button {
+    background: rgba(255, 255, 255, 1);
+    width: 20px;
+}
+
+.csr-main-section {
     height: calc(100vh - 65px);
     overflow: auto;
     background-image: url(../images/project-background.png);
@@ -222,6 +271,11 @@ p {
     background-repeat: no-repeat;
     padding: 20px 50px;
     background-size: cover;
+    margin: 0px 1.5rem;
+}
+
+.csr-main-section.milestonePageBgnd {
+    background-image: url(../images/milestonePage-background.png);
 }
 
 .mCSB_scrollTools .mCSB_draggerRail {
@@ -316,6 +370,15 @@ label .csr-input-Required {
     background-size: contain;
 }
 
+.label-type-file.csr-tbl-lbl {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.label-type-file.csr-tbl-lbl:hover {
+    color: black;
+}
+
 .label-file-name {
     color: white;
     opacity: 0.6;
@@ -337,6 +400,7 @@ label .csr-input-Required {
 table.csr-table {
     display: block;
     width: auto;
+    overflow-x: auto;
 }
 
 .bootstrap-table.bootstrap4 {
@@ -431,4 +495,76 @@ button.csr-cstm-btn.table-btn {
 .pagination-detail .dropdown-item.active,
 .pagination-detail .dropdown-item:active {
     background-color: orange;
+}
+
+.csr-slider-section {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+    transition: all 0.3s ease-out;
+}
+
+.csr-slider-section.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.csr-slider-section .close-slider {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.csr-slider-section .close-slider::before {
+    content: '';
+    position: absolute;
+    left: 48%;
+    width: 2px;
+    top: 15%;
+    transform: rotate(45deg);
+    height: 70%;
+    background: white;
+}
+
+.csr-slider-section .close-slider::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    width: 2px;
+    top: 15%;
+    transform: rotate(-45deg);
+    height: 70%;
+    background: white;
+}
+
+.csr-slider-section .slider-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.csr-slider-section .slider-container .slider-chld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csr-slider-section .slider-chld img {
+    width: 50%;
+}
+
+.csr-slider-section .slick-slider .slick-list {
+    top: 50%;
+    transform: translate3d(0, 0, 0) translateY(-50%);
 }
