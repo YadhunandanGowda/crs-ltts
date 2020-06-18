@@ -165,8 +165,20 @@ p {
     margin-bottom: 20px;
 }
 
+.cnt-link {
+    display: inline-block;
+}
+
 .cnt-link img {
     width: 35px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease-out;
+}
+
+.cnt-link:hover img {
+    left: 10px;
 }
 
 .banner-sec .bnr-cnt-sec .arrow-lft,
@@ -348,7 +360,7 @@ p {
     padding: 0px 20px;
 }
 
-label .csr-input-Required {
+.csr-input-Required {
     color: red;
     padding-left: 5px;
 }
@@ -455,6 +467,20 @@ button.csr-cstm-btn.table-btn {
     background-color: rgba(255, 255, 255, 0.5);
     white-space: nowrap;
     padding: 3px 10px;
+}
+
+.csr-table-icon {
+    margin: 0px 10px;
+}
+
+.csr-table-icon img {
+    width: 25px;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+
+.csr-table-icon:hover img {
+    transform: scale(1.2);
 }
 
 .bootstrap-table .fixed-table-container .table {

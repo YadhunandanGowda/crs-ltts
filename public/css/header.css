@@ -58,7 +58,8 @@ header .options .back-btn img {
     height: 40px;
 }
 
-header .options button.login {
+
+/* header .options button.login {
     margin: 16px 10px 16px 15px;
     background-color: unset;
     color: black;
@@ -66,18 +67,27 @@ header .options button.login {
     padding: 4px 12px;
     font-size: 14px;
     font-weight: bold;
-}
+} */
 
-header .options button.login:hover,
+
+/* header .options button.login:hover,
 header .options button.login:active {
     background-color: rgba(0, 0, 0, 0.1);
     border-color: transparent;
     box-shadow: unset;
+} */
+
+header .options .login {
+    margin: 16px 10px 16px 15px;
+}
+
+header .options .login img {
+    width: 40px;
 }
 
 header .options .profile-pic {
     padding: 10px;
-    margin: 0px 5px 0px 10px;
+    margin: 0px 5px;
     position: relative;
     transition: all 1s;
     z-index: 2;
@@ -115,7 +125,7 @@ header .options .profile-pic .logout-popup .popup-content .inner-pp {
 header .options .profile-pic .logout-popup .popup-content .log-out-btn {
     margin: 10px auto;
     padding: 10px 30px;
-    background: orange;
+    background: #f57d02;
     display: block;
     border-radius: 20px;
     font-size: 12px;
@@ -267,7 +277,7 @@ header .options .profile-pic .logout-popup .cls-btn::after {
     display: block;
     width: 30px;
     border-radius: 4px;
-    height: 4px;
+    height: 2px;
     background-color: black;
     outline: 1px solid transparent;
     -webkit-transition-property: background-color, -webkit-transform;
@@ -284,14 +294,14 @@ header .options .profile-pic .logout-popup .cls-btn::after {
 .burger span::after {
     position: absolute;
     content: "";
-    top: 9px;
+    top: 8px;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .burger span::before {
-    top: -9px;
+    top: -7px;
 }
 
 .burger.clicked span {
@@ -301,14 +311,14 @@ header .options .profile-pic .logout-popup .cls-btn::after {
 
 .burger.clicked span::before {
     transform: rotate(45deg);
-    top: 0px;
-    width: 100%;
+    top: 3px;
+    width: 80%;
 }
 
 .burger.clicked span::after {
     transform: rotate(135deg);
-    top: 0px;
-    width: 100%;
+    top: 3px;
+    width: 80%;
 }
 
 nav.csr-nav {
