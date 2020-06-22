@@ -10,59 +10,60 @@
 } */
 
 .login-form-csr .form-control {
-  border-radius: 6px;
-  background-color: transparent;
-  color: white;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
 }
 
 .login-form-csr .form-control:focus {
-  border-color: white !important;
-  border: 2px solid;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+    border-color: white !important;
+    border: 2px solid;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
 }
+
 
 /* .login-sec .submit {
   width: 100%;
 } */
 
 .login-form-csr .ttl {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.51);
-  color: white;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+    color: white;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }
 
 header .options .back-btn {
-  padding: 12px 0px 12px 15px;
+    padding: 12px 0px 12px 15px;
 }
 
 .banner-sec .bnr-cnt-sec {
-  padding: 20px 30px 60px;
+    padding: 20px 30px 60px;
 }
 
 .login-form-csr label {
-  color: white;
+    color: white;
 }
 
 .login-form-csr .form-control::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(255, 255, 255, 0.3);
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .login-form-csr .form-control:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgba(255, 255, 255, 0.3);
+    /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .login-form-csr .form-control::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: rgba(255, 255, 255, 0.3);
+    /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.3);
 }

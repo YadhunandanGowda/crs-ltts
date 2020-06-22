@@ -93,857 +93,645 @@
             <form>
                 <div class="form-row">
                     <div class="col-md-4 mb-3 csr-col-box">
-                        <label for="PatName">CSR Patner Name<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="PatName"
-                placeholder="Patner name"
-                value=""
-                required
-                readonly="readonly"
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="VendCode"
-                >Vender Code<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="VendCode"
-                placeholder="Vender Code"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="ProjName"
-                >Project Name<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="ProjName"
-                placeholder="Project Name"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="Theme"
-                >Theme<span class="csr-input-Required">*</span></label
-              >
-              <select class="form-control" id="Theme">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-              <div class="hidden-feilds">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="Themefield"
-                  placeholder="Theme"
-                />
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="OrgType"
-                >Organization Type / legal status<span
-                  class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <select class="form-control" id="OrgType">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-              <div class="hidden-feilds">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="OrgnType"
-                  placeholder="Organization Type / legal status"
-                />
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="RegDoc"
-                >Upload Registration document<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <select id="RegDoc" class="form-control">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-              <div class="hidden-feilds text-center">
-                <input
-                  class="input-type-file"
-                  type="file"
-                  name="RegDoc"
-                  id="RegDocFile"
-                />
-                <label class="label-type-file" for="RegDocFile">
-                  Click To Upload Document
-                </label>
-                        <label class="label-file-name"></label>
+                        <label for="PatName">CSR Patner Name<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="PatName" placeholder="Patner name" value="" required readonly="readonly" />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="VendCode">Vender Code<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="VendCode" placeholder="Vender Code" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ProjName">Project Name<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="ProjName" placeholder="Project Name" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
                     </div>
                 </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="Theme">80G Certified<span class="csr-input-Required">*</span></label
-              >
-              <select id="GCert" class="form-control">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-              <div class="hidden-feilds text-center">
-                <input
-                  class="input-type-file"
-                  type="file"
-                  name="GCert"
-                  id="GCertFile"
-                />
-                <label class="label-type-file" for="GCertFile">
-                  Click To Upload Document
-                </label>
-                <label class="label-file-name"></label>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3 csr-col-box">
-            <label for="ACert">12 A Certified<span class="csr-input-Required">*</span></label
-              >
-              <select id="ACert" class="form-control HideDataDisp">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-              <div class="hidden-feilds text-center">
-                <input
-                  class="input-type-file"
-                  type="file"
-                  name="ACert"
-                  id="ACertFile"
-                />
-                <label class="label-type-file" for="ACertFile">
-                  Click To Upload Document
-                </label>
-            <label class="label-file-name"></label>
-        </div>
-        </div>
-        <div class="col-md-4 mb-3 csr-col-box">
-            <label for="TdsExe">Is partner TDS Exempted<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <select id="TdsExe" class="form-control">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-              <div class="hidden-feilds text-center">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="TdsRel"
-                  placeholder="Enter the relavent details"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="ProjRece"
-                >Has the Proposal for the final Projects received and
-                accepted<span class="csr-input-Required">*</span></label
-              >
-              <select id="ProjRece" class="form-control">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-              <div class="hidden-feilds text-center">
-                <input
-                  class="input-type-file"
-                  type="file"
-                  name="ProjRece"
-                  id="ProjRelDoc"
-                />
-                <label class="label-type-file" for="ProjRelDoc">
-                  Click To Upload Document
-                </label>
-            <label class="label-file-name"></label>
-        </div>
-        <div class="hidden-feilds text-center">
-            <input type="text" class="form-control form-control-sm" id="ProjRel" placeholder="Enter the relavent details" />
-        </div>
-        </div>
-        <div class="col-md-4 mb-3 csr-col-box">
-            <label for="ContDate">Effective Date of agreement<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="ContDate"
-                placeholder="Click to select date"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="ExpDate"
-                >Expire Date of agreement<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="ExpDate"
-                placeholder="Click to select date"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="SOW_Start">SOW start date</label>
-            <input type="text" class="form-control" id="SOW_Start" placeholder="Click to select date" value="" required />
-        </div>
-        <div class="col-md-4 mb-3 csr-col-box">
-            <label for="SOW_End">SOW end date<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="SOW_End"
-                placeholder="Click to select date"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="ConRefNo">Agreement Reference No if any</label>
-            <input type="text" class="form-control" id="ConRefNo" placeholder="" value="" required />
-        </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="LegConPer">Name and desgination Authorisied legal contact person
-                details<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="LegConPer"
-                placeholder=""
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="LegContNo"
-                >Authorized Contact number<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="LegContNo"
-                placeholder=""
-                value=""
-                required
-              />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="SpoEmail"
-                >Authorized Email ID<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="SpoEmail"
-                placeholder=""
-                value=""
-                required
-              />
-            </div>
-          </div>
-          <div class="form-row">
-            <h3 class="csr-title my-3">SPOC from Vendor for this project:</h3>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="VendName"
-                >Name<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="VendName"
-                placeholder=""
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="VendContNo"
-                >Contact number<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="VendContNo"
-                placeholder=""
-                value=""
-                required
-              />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="VendEmail"
-                >Email ID<span class="csr-input-Required">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="VendEmail"
-                placeholder=""
-                value=""
-                required
-              />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="VendAltNo">Alternate number</label>
-                <input type="text" class="form-control" id="VendAltNo" placeholder="" value="" required />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="Location">Location:</label>
-                <input type="text" class="form-control" id="Location" placeholder="" value="" required />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="Projstart">Project Start Month & Year<span class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="Projstart"
-                placeholder="Click to select date"
-                value=""
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide a valid value.
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3 csr-col-box">
-              <label for="Projend">Project End Month & Year</label>
-                <input type="text" class="form-control" id="Projend" placeholder="Click to select date" value="" required />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="ProjCost">Total Project cost in INR</label>
-                <input type="text" class="form-control" id="ProjCost" placeholder="" value="" required />
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="inputState">Is the Project spread over to multiple Financial Year<span
-                  class="csr-input-Required"
-                  >*</span
-                ></label
-              >
-              <select id="inputState" class="form-control">
-                <option>Yes</option>
-                <option selected>No</option>
-              </select>
-            </div>
-          </div>
-        </form>
-        <div class="form-row justify-content-center">
-          <table class="my-4 csr-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Cost break up</th>
-              </tr>
-            </thead>
-            <tbody class="MultiFinYear">
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Lorem ipsum dolor"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="form-row justify-content-center mt-4">
-          <div class="col-md-4 mb-3 csr-col-box">
-            <label for="Projend">Brief Details of CSR Initiative</label>
-                <textarea rows="4" cols="50" class="form-control Benefit"></textarea>
-            </div>
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="ProjCost">Expected Benefits</label>
-                <textarea rows="4" cols="50" class="form-control Exp"></textarea>
-            </div>
-        </div>
-        <div class="form-row justify-content-center">
-            <div class="col-md-4 mb-3 csr-col-box">
-                <label for="Theme">Milestone update<span class="csr-input-Required">*</span></label
-            >
-            <select class="form-control MilestoneState" id="Theme">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="Theme">Theme<span class="csr-input-Required">*</span></label>
+                        <select class="form-control" id="Theme">
               <option>1</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
               <option>5</option>
             </select>
-            <div class="invalid-feedback">
-              Please provide a valid value.
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                        <div class="hidden-feilds">
+                            <input type="text" class="form-control" id="Themefield" placeholder="Theme" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="OrgType">Organization Type / legal status<span class="csr-input-Required">*</span></label>
+                        <select class="form-control" id="OrgType">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                        <div class="hidden-feilds">
+                            <input type="text" class="form-control" id="OrgnType" placeholder="Organization Type / legal status" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="RegDoc">Upload Registration document<span class="csr-input-Required">*</span></label>
+                        <select id="RegDoc" class="form-control">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                        <div class="hidden-feilds text-center">
+                            <input class="input-type-file" type="file" name="RegDoc" id="RegDocFile" />
+                            <label class="label-type-file" for="RegDocFile">
+                Click To Upload Document
+              </label>
+                            <label class="label-file-name"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="Theme">80G Certified<span class="csr-input-Required">*</span></label>
+                        <select id="GCert" class="form-control">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                        <div class="hidden-feilds text-center">
+                            <input class="input-type-file" type="file" name="GCert" id="GCertFile" />
+                            <label class="label-type-file" for="GCertFile">
+                Click To Upload Document
+              </label>
+                            <label class="label-file-name"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ACert">12 A Certified<span class="csr-input-Required">*</span></label>
+                        <select id="ACert" class="form-control HideDataDisp">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                        <div class="hidden-feilds text-center">
+                            <input class="input-type-file" type="file" name="ACert" id="ACertFile" />
+                            <label class="label-type-file" for="ACertFile">
+                Click To Upload Document
+              </label>
+                            <label class="label-file-name"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="TdsExe">Is partner TDS Exempted<span class="csr-input-Required">*</span></label>
+                        <select id="TdsExe" class="form-control">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                        <div class="hidden-feilds text-center">
+                            <input type="text" class="form-control" id="TdsRel" placeholder="Enter the relavent details" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ProjRece">Has the Proposal for the final Projects received and
+              accepted<span class="csr-input-Required">*</span></label>
+                        <select id="ProjRece" class="form-control">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                        <div class="hidden-feilds text-center">
+                            <input class="input-type-file" type="file" name="ProjRece" id="ProjRelDoc" />
+                            <label class="label-type-file" for="ProjRelDoc">
+                Click To Upload Document
+              </label>
+                            <label class="label-file-name"></label>
+                        </div>
+                        <div class="hidden-feilds text-center">
+                            <input type="text" class="form-control form-control-sm" id="ProjRel" placeholder="Enter the relavent details" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ContDate">Effective Date of agreement<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="ContDate" placeholder="Click to select date" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ExpDate">Expire Date of agreement<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="ExpDate" placeholder="Click to select date" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="SOW_Start">SOW start date</label>
+                        <input type="text" class="form-control" id="SOW_Start" placeholder="Click to select date" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="SOW_End">SOW end date<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="SOW_End" placeholder="Click to select date" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ConRefNo">Agreement Reference No if any</label>
+                        <input type="text" class="form-control" id="ConRefNo" placeholder="" value="" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="LegConPer">Name and desgination Authorisied legal contact person
+              details<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="LegConPer" placeholder="" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="LegContNo">Authorized Contact number<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="LegContNo" placeholder="" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="SpoEmail">Authorized Email ID<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="SpoEmail" placeholder="" value="" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h3 class="csr-title my-3">SPOC from Vendor for this project:</h3>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="VendName">Name<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="VendName" placeholder="" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="VendContNo">Contact number<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="VendContNo" placeholder="" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="VendEmail">Email ID<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="VendEmail" placeholder="" value="" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="VendAltNo">Alternate number</label>
+                        <input type="text" class="form-control" id="VendAltNo" placeholder="" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="Location">Location:</label>
+                        <input type="text" class="form-control" id="Location" placeholder="" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="Projstart">Project Start Month & Year<span class="csr-input-Required">*</span></label>
+                        <input type="text" class="form-control" id="Projstart" placeholder="Click to select date" value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid value.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="Projend">Project End Month & Year</label>
+                        <input type="text" class="form-control" id="Projend" placeholder="Click to select date" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="ProjCost">Total Project cost in INR</label>
+                        <input type="text" class="form-control" id="ProjCost" placeholder="" value="" required />
+                    </div>
+                    <div class="col-md-4 mb-3 csr-col-box">
+                        <label for="inputState">Is the Project spread over to multiple Financial Year<span
+                class="csr-input-Required">*</span></label>
+                        <select id="inputState" class="form-control">
+              <option>Yes</option>
+              <option selected>No</option>
+            </select>
+                    </div>
+                </div>
+            </form>
+            <div class="form-row justify-content-center">
+                <table class="my-4 csr-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Cost break up</th>
+                        </tr>
+                    </thead>
+                    <tbody class="MultiFinYear">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-          </div>
-          <div class="col-md-4 mb-3 csr-col-box">
-            <div class="hidden-feilds mt-0">
-              <label>Enter number of MilestoneState</label>
-                <input type="number" class="form-control MilestoneState" placeholder="" />
+            <div class="form-row justify-content-center mt-4">
+                <div class="col-md-4 mb-3 csr-col-box">
+                    <label for="Projend">Brief Details of CSR Initiative</label>
+                    <textarea rows="4" cols="50" class="form-control Benefit"></textarea>
+                </div>
+                <div class="col-md-4 mb-3 csr-col-box">
+                    <label for="ProjCost">Expected Benefits</label>
+                    <textarea rows="4" cols="50" class="form-control Exp"></textarea>
+                </div>
             </div>
-        </div>
-        </div>
-        <div class="form-row">
-            <h3 class="csr-title my-3">Milestone & Payment Schedule</h3>
-        </div>
-        <div class="form-row">
-            <table class="my-4 csr-table pb-3" id="FinCost">
-                <thead>
-                    <tr>
-                        <th>Milestone No.</th>
-                        <th>Milestone Description</th>
-                        <th>Targeted date of Milestone completion</th>
-                        <th>Amount to be paid against completion of the milestone</th>
-                        <th>Target Monthof the payment</th>
-                        <th>Remarks</th>
-                    </tr>
-                </thead>
-                <tbody class="MultiFinYear">
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="form-row justify-content-center">
-            <button class="btn csr-cstm-btn save m-4" id="SaveEmpData" onclick="SaveData();return false">
-            Create CSR Project
-          </button>
-            <button class="btn csr-cstm-btn cancel m-4" onclick="cancelData();return false">
-            Cancel
-          </button>
-        </div>
+            <div class="form-row justify-content-center">
+                <div class="col-md-4 mb-3 csr-col-box">
+                    <label for="Theme">Milestone update<span class="csr-input-Required">*</span></label>
+                    <select class="form-control MilestoneState" id="Theme">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid value.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 csr-col-box">
+                    <div class="hidden-feilds mt-0">
+                        <label>Enter number of MilestoneState</label>
+                        <input type="number" class="form-control MilestoneState" placeholder="" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <h3 class="csr-title my-3">Milestone & Payment Schedule</h3>
+            </div>
+            <div class="form-row">
+                <table class="my-4 csr-table pb-3" id="FinCost">
+                    <thead>
+                        <tr>
+                            <th>Milestone No.</th>
+                            <th>Milestone Description</th>
+                            <th>Targeted date of Milestone completion</th>
+                            <th>Amount to be paid against completion of the milestone</th>
+                            <th>Target Monthof the payment</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody class="MultiFinYear">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Lorem ipsum dolor" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-row justify-content-center">
+                <button class="btn csr-cstm-btn save m-4" id="SaveEmpData" onclick="SaveData();return false">
+          Create CSR Project
+        </button>
+                <button class="btn csr-cstm-btn cancel m-4" onclick="cancelData();return false">
+          Cancel
+        </button>
+            </div>
         </div>
     </section>
     <!-- <footer class="text-center">

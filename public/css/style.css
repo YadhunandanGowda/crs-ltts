@@ -276,7 +276,7 @@ p {
 }
 
 .csr-main-section {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 62px);
     overflow: auto;
     background-image: url(../images/project-background.png);
     background-position: center;
@@ -587,7 +587,8 @@ button.csr-cstm-btn.table-btn {
 }
 
 .csr-slider-section .slider-chld img {
-    width: 50%;
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 .csr-slider-section .slick-slider .slick-list {

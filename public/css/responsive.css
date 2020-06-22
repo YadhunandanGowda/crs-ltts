@@ -1,18 +1,90 @@
 @media only screen and (max-width: 1440px) {}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    .banner-sec .bnr-cnt-sec .indiv-cnt-blk .cnt-dspn {
+        color: white;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .banner-sec .bnr-cnt-sec {
+        padding: 40px 30px 60px;
+    }
+    .banner-sec .hdr-cnt {
+        max-width: 320px;
+    }
+    .banner-sec .hdr-cnt .cnt-ttl {
+        font-size: 28px;
+    }
+    .banner-sec .bnr-cnt-sec .indiv-cnt-blk .cnt-ttl {
+        font-size: 24px;
+    }
+    .banner-sec .bnr-cnt-sec .arrow-lft,
+    .banner-sec .bnr-cnt-sec .arrow-rgt {
+        width: 20px;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .csr-main-section {
         padding: 20px 30px;
+    }
+    .banner-sec .bnr-cnt-sec {
+        top: 90%;
+        left: 50%;
+        max-width: 95%;
+        min-width: 95%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        padding: 20px 30px 40px;
+    }
+    .banner-sec .bnr-img-sec {
+        width: 100%;
+    }
+    .banner-sec .hdr-cnt {
+        max-width: 90%;
+        right: 5%;
+        bottom: 30px;
+    }
+    .banner-sec .bnr-cnt-sec .arrow-lft,
+    .banner-sec .bnr-cnt-sec .arrow-rgt {
+        bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 767px) {}
 
 @media only screen and (max-width: 480px) {
+    .mgn-fr-hdr {
+        margin-top: 73px;
+    }
     .csr-main-section {
         padding: 20px 10px;
+    }
+    .banner-sec .bnr-cnt-sec {
+        top: 90%;
+        max-width: 90%;
+        min-width: 90%;
+    }
+    .banner-sec .bnr-cnt-sec .indiv-cnt-blk .cnt-ttl {
+        font-size: 22px;
+    }
+    .banner-sec .hdr-cnt .cnt-ttl {
+        font-size: 22px;
+    }
+    .banner-sec .hdr-cnt {
+        left: 10%;
+        right: unset;
+        bottom: 5px;
+        max-width: 60%
+    }
+    .cnt-link img {
+        width: 30px;
+    }
+    .banner-sec .bnr-cnt-sec .arrow-lft,
+    .banner-sec .bnr-cnt-sec .arrow-rgt {
+        width: 15px;
+        bottom: 15px;
     }
 }
 
